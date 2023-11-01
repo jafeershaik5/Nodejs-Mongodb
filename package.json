@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-mongodb",
+  "version": "1.0.0",
+  "description": "Nodejs using Mongodb without using Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "JafeerShaik",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
