@@ -6,12 +6,22 @@ POST  http://localhost:4040/users
 Content-Type: application/json
 
 {
+    "_id":"65423d4b726df47fcbaa1e08",
     "userName": "jafeershaik",
     "firstName": "Jafeer",
     "lastName": "Shaik",
     "age":23,
     "phone":"9700853426",
-    "address":"nellore"
+    "address":{
+            "doorNo":"28-5-4",
+            "street":"putta center",
+            "area":"mypadu road",
+            "city":"nellore",
+            "state":"Andhra Pradesh",
+            "country":"india",
+            "zipcode":524002
+        }
+    
 }
 
 ###updating user
