@@ -1,8 +1,8 @@
-GET http://localhost:3000/users
+GET http://localhost:4040/users
 
 ### creating new users
 
-POST  http://localhost:3000/users
+POST  http://localhost:4040/users
 Content-Type: application/json
 
 {
@@ -15,7 +15,7 @@ Content-Type: application/json
 }
 
 ###updating user
-PUT   http://localhost:3000/users
+PUT   http://localhost:4040/users
 Content-Type: application/json
 
 {
@@ -39,4 +39,4 @@ Content-Type: application/json
 
 ### get a particular user
 
-GET http://localhost:3000/users/65423d4b726df47fcbaa1e08
+GET http://localhost:4040/users/65423d4b726df47fcbaa1e08

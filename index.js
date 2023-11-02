@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors');
 const { connectToDb } = require('./Utils/db')
 
-const port = 3000;
+const port = 4040;
 
 app.use(cors());
 app.options('*', cors());
