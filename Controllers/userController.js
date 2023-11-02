@@ -38,7 +38,15 @@ let userController = {
             lastName: req.body.lastName,
             age: req.body.age,
             phone: req.body.phone,
-            address: req.body.address
+            address: {
+                doorNo: req.body.address.doorNo,
+                street: req.body.address.street,
+                area: req.body.address.area,
+                city: req.body.address.city,
+                state: req.body.address.state,
+                country: req.body.address.country,
+                zipcode: req.body.address.zipcode
+            }
         }
         model.create(data)
             .then(data => {
