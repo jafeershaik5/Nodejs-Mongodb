@@ -17,11 +17,10 @@ let userController = {
     },
     async findOne(req, res) {
         let condition = {
-            _id: new ObjectId(req.params.id)
+            _id: new ObjectId(req.params.id)  //here _id is coming as string from the params so we need to change from string to the objectId
         }
         model.findOne(condition)
             .then(data => {
-                console.log('User data:', data);
                 res.send(data);
             })
             .catch(err => {
@@ -76,8 +75,20 @@ let userController = {
                 zipcode: req.body.address.zipcode
             }
         }
-
         model.update(id, data)
+            .then(data => {
+                res.send(data)
+            })
+            .catch(error => {
+                res.status(500).send({
+                    message: error.message
+                });
+            });
+    },
+    deleteOne(req, res) {
+        let id = new ObjectId(req.params.id)
+
+        model.deleteOne(id)
             .then(data => {
                 res.send(data)
             })

@@ -1,25 +1,26 @@
+###Getting the users.
+
 GET http://localhost:4040/users
 
-### creating new users
+### creating new users.
 
 POST  http://localhost:4040/users
 Content-Type: application/json
 
 {
-    "_id":"65423d4b726df47fcbaa1e08",
-    "userName": "jafeershaik",
-    "firstName": "Jafeer",
-    "lastName": "Shaik",
-    "age":23,
-    "phone":"9700853426",
+    "userName": "MSD",
+    "firstName": "Mahendra Singh",
+    "lastName": "Dhoni",
+    "age":42,
+    "phone":"1234567890",
     "address":{
-            "doorNo":"28-5-4",
-            "street":"putta center",
-            "area":"mypadu road",
-            "city":"nellore",
-            "state":"Andhra Pradesh",
-            "country":"india",
-            "zipcode":524002
+            "doorNo":"12-3-4",
+            "street":"street",
+            "area":"Ranchi",
+            "city":"Ranchi",
+            "state":"Jharkhand",
+            "country":"India",
+            "zipcode":123456
         }
     
 }
@@ -29,24 +30,29 @@ PUT   http://localhost:4040/users
 Content-Type: application/json
 
 {
-    "_id":"65423d4b726df47fcbaa1e08",
-    "userName": "jafeershaik",
-    "firstName": "Jafeer",
-    "lastName": "Shaik",
+    "_id":"654345c7bcac27a210c6e47c",
+    "userName": "fooBoo",
+    "firstName": "Foo",
+    "lastName": "Boo",
     "age":23,
-    "phone":"9700853426",
+    "phone":"1234567890",
     "address":{
-            "doorNo":"28-5-4",
-            "street":"putta center",
-            "area":"mypadu road",
-            "city":"nellore",
+            "doorNo":"1-2-3",
+            "street":"street",
+            "area":"area",
+            "city":"city",
             "state":"Andhra Pradesh",
-            "country":"india",
-            "zipcode":524002
+            "country":"India",
+            "zipcode":123456
         }
     
 }
 
 ### get a particular user
+### you can add your objectId here in params
 
-GET http://localhost:4040/users/65423d4b726df47fcbaa1e08
+GET http://localhost:4040/users/654345c7bcac27a210c6e47c
+
+### delete a particular user
+
+DELETE  http://localhost:4040/users/654345c7bcac27a210c6e47c
